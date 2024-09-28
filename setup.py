@@ -12,6 +12,7 @@ setup(
         'pandas',
         'pulumi',
         'pulumi_aws',
+        'python-dotenv',
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',

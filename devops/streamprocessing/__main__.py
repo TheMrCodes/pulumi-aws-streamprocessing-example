@@ -1,6 +1,8 @@
 import os
 import pulumi
 import pulumi_aws as aws
+import dotenv
+dotenv.load_dotenv()
 
 PROJECT_ROLE = os.getenv("PROJECT_ROLE_ARN")
 ADMIN_EMAIL = os.getenv("ADMIN_EMAIL")
@@ -8,7 +10,6 @@ ADMIN_EMAIL = os.getenv("ADMIN_EMAIL")
 # Define existing Project Role
 role_info = aws.iam.get_role(name="LabRole")
 PROJECT_ROLE_ARN = role_info.arn
-ADMIN_EMAIL = "<your-email>"
 
 # Create a Kinesis Data Stream
 kinesis_stream = aws.kinesis.Stream(
