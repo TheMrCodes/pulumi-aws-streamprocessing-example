@@ -1,0 +1,4 @@
+encryptionsalt: v1:Hts30WQhSO8=:v1:1Va6u0HklPgUcatx:vHPSYwo0R7unNLUryOXbBhAamQUZ6g==
+name: streamprocessing
+description: A minimal AWS Python Pulumi program
+main: devops/streamprocessing
