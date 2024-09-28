@@ -8,7 +8,7 @@ PROJECT_ROLE = os.getenv("PROJECT_ROLE_ARN")
 ADMIN_EMAIL = os.getenv("ADMIN_EMAIL")
 
 # Define existing Project Role
-role_info = aws.iam.get_role(name="LabRole")
+role_info = aws.iam.get_role(name=PROJECT_ROLE)
 PROJECT_ROLE_ARN = role_info.arn
 
 # Create a Kinesis Data Stream
